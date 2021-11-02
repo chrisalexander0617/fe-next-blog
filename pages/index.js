@@ -52,6 +52,7 @@ export default function Home() {
   )
 }
 
+/*
 export async function getStaticProps(){
 
   const res = await fetch('http://localhost:1337/posts');
@@ -64,3 +65,4 @@ export async function getStaticProps(){
   }
 
 }
+*/

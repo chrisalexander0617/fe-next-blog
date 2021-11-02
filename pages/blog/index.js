@@ -3,9 +3,9 @@ import Head from 'next/head';
 export default function Home({posts}) {
     return ( 
       <>
-      <Head>
-        <title>Blog PAge</title>
-      </Head>
+        <Head>
+          <title>Blog PAge</title>
+        </Head>
         {
           posts && posts.map((post) => (
             /* Replace localhost with environemtal variables or domain */
@@ -21,9 +21,9 @@ export default function Home({posts}) {
       </>
     )
   }
-  
+
+
   export async function getStaticProps(){
-  
     const res = await fetch('http://localhost:1337/posts');
     const posts = await res.json();
   
@@ -34,3 +34,4 @@ export default function Home({posts}) {
     }
   
   }
+ 

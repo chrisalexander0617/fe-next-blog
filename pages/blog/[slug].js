@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import React from 'react';
+import ReactMarkdown from 'react-markdown';
 
 export default function Post({post}){
     return (
@@ -6,8 +8,8 @@ export default function Post({post}){
             <Head>
                 <title>{post.Title}</title>
             </Head>
-            <div>{post.Title}</div>
-            <p>{post.Content}</p>
+            <h1>{post.Title}</h1>
+            <ReactMarkdown children={post.Content} />
         </>
     )
 }
