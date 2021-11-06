@@ -1,6 +1,6 @@
 import React from 'react';
+import Button from '../../atoms/buttons/Button'
 import styles from '../../../../styles/Global.module.css';
-import MainNav from '../../MainNav'
 
 function GeneralHeader(props){
     return (
@@ -11,9 +11,11 @@ function GeneralHeader(props){
                         <h1 className="text-5xl mb-5">{props.title}</h1>
                         <p className="text-gray-300 font-light mb-10">
                         </p>
-                        <button className="px-5 py-3 bg-gray-100 rounded-xl text-gray-900 font-bold">See Our Work</button>
+                        <Button
+                            button_text="See Our Work"
+                            bg_color="bg-blue-500"
+                        />
                     </div>
-                    
                 </div>
             </header>
         </>

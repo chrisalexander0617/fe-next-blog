@@ -20,12 +20,12 @@ export async function getStaticPaths() {
 
     const paths = posts.map((post) => ({
         params: {slug: post.Slug}
-    }))
+    }));
 
     return {
        paths, 
        fallback: false
-    }
+    };
 }
 
 export async function getStaticProps({ params }) {

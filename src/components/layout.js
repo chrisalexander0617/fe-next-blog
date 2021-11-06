@@ -1,4 +1,4 @@
-import Footer from '../components/Footer';
+import Footer from './organisms/Footer';
 
 export default function Layout({ children }) {
   return (
