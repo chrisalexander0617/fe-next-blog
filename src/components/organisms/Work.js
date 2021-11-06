@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../../../styles/Global.module.css';
 import WorkCard from '../elements/cards/WorkCard';
 
-function Work(){
+export default function Work(){
     return (
         <>
             <div className="bg-gray-100 py-10 px-10">
@@ -21,5 +21,3 @@ function Work(){
         </>
     )
 }
-
-export default Work;

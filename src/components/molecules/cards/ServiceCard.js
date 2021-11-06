@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ServiceCard(props){
+export default function ServiceCard(props){
     return (
         <>
             <div className={`${props.bg_color} px-10 py-10 shadow-xl rounded-xl`}>
@@ -12,5 +12,3 @@ function ServiceCard(props){
         </>
     )
 }
-
-export default ServiceCard;
