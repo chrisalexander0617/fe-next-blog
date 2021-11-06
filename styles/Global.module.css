@@ -5,7 +5,10 @@
     overflow:hidden;
 }
 
-
+.title {
+    max-width:90%;
+    line-height:1.2;
+}
 
 .section {
     height:auto;
