@@ -1,10 +1,13 @@
 import React from 'react';
 import Grid from '../molecules/Grid'
-import ServiceCard from '../molecules/cards/ServiceCard';
+import ServiceCard from '../molecules/cards/Card';
 
 export default function ServiceCardsGrid(props){
     return (
-        <>              
+        <> 
+            <div className="text-center">
+                <h2 className="text-gray-300 text-2xl mb-10">The stuff we do here</h2>
+            </div>            
             <div className={`${props.bg}`}>
                 <Grid grid_options="grid-cols-1 gap-10 md:grid-cols-3">
                     <ServiceCard 

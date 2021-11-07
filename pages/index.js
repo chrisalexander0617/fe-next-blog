@@ -5,6 +5,7 @@ import ServiceCardsGrid from '../src/components/templates/ServiceCardGrid';
 import SmallSpaceSection from '../src/components/molecules/sections/SmallSpaceSection';
 import Logos from '../src/components/templates/Logos';
 import Projects from '../src/components/templates/Projects';
+import FAQ from '../src/components/templates/FAQ';
 
 export default function Home() {
   return ( 
@@ -34,6 +35,10 @@ export default function Home() {
       <SmallSpaceSection bg="bg-gray-900">
         <Projects />
       </SmallSpaceSection>
+      
+      <SmallSpaceSection bg="bg-gray-900">
+        <FAQ />
+     </SmallSpaceSection>
     </>
   )
 };
