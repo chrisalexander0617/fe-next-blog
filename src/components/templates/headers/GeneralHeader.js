@@ -12,7 +12,7 @@ export default function GeneralHeader(props){
                         <p className="text-gray-300 font-light mb-10"></p>
                         <Button
                             button_text="See Our Work"
-                            bg_color="bg-blue-500"
+                            bg_color="bg-green-500"
                         />
                     </div>
                 </div>

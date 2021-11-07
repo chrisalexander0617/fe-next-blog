@@ -6,8 +6,7 @@ export default function Home({posts}) {
         <Head>
           <title>Blog PAge</title>
         </Head>
-        {
-          posts && posts.map((post) => (
+        {posts && posts.map((post) => (
             /* Replace localhost with environemtal variables or domain */
             <a href={`http://localhost:3000/blog/${post.Slug}`} >
               <div key={post.id}>
@@ -16,12 +15,10 @@ export default function Home({posts}) {
               </div>
             </a>
             )
-          )
-        }
+          )}
       </>
     )
   }
-
 
   export async function getStaticProps(){
     const res = await fetch('http://localhost:1337/posts');

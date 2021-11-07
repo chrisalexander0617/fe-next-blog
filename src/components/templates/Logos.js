@@ -5,13 +5,18 @@ import MongoDBLogo from '../molecules/logos/MongoDB.js';
 import BrainJSLogo from '../molecules/logos/BrainJS';
 import StrapiLogo from '../molecules/logos/Strapi';
 import ShopifyLogo from '../molecules/logos/Shopify';
+import NodeJSLogo from '../molecules/logos/NodeJS'
 
 export default function Logos(){
     return (
         <>
-            <Grid grid_options="grid-cols-2 gap-10 md:grid-cols-5">
+        <div className="text-center">
+            <h2 class="text-gray-300 font-bold text-2xl mb-10">Technologies</h2>
+        </div>
+            <Grid grid_options="grid-cols-3 gap-10 md:grid-cols-3 lg:grid-cols-6">
                 <ReactLogo />
                 <MongoDBLogo />
+                <NodeJSLogo />
                 <BrainJSLogo />
                 <StrapiLogo />
                 <ShopifyLogo />
