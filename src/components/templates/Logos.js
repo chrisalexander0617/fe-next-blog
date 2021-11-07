@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Grid from '../molecules/Grid';
 import ReactLogo from '../molecules/logos/React.js';
 import MongoDBLogo from '../molecules/logos/MongoDB.js';
@@ -11,7 +12,7 @@ export default function Logos(){
     return (
         <>
         <div className="text-center">
-            <h2 class="text-gray-300 font-bold text-2xl mb-10">Technologies</h2>
+            <h2 className="text-gray-300 text-2xl mb-10">Technologies</h2>
         </div>
             <Grid grid_options="grid-cols-3 gap-10 md:grid-cols-3 lg:grid-cols-6">
                 <ReactLogo />
@@ -23,4 +24,4 @@ export default function Logos(){
             </Grid>
         </>
     )
-}
+};
