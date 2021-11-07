@@ -4,6 +4,7 @@ import Head from 'next/head';
 import ServiceCardsGrid from '../src/components/templates/ServiceCardGrid';
 import SmallSpaceSection from '../src/components/molecules/sections/SmallSpaceSection';
 import Logos from '../src/components/templates/Logos';
+
 export default function Home() {
   return ( 
     <>
@@ -23,6 +24,7 @@ export default function Home() {
       <SmallSpaceSection bg="bg-gray-900">
         <ServiceCardsGrid  bg="bg-gray-900"  />
       </SmallSpaceSection>
+
       <SmallSpaceSection bg="bg-gray-900">
         <Logos />
       </SmallSpaceSection>
