@@ -1,7 +1,6 @@
 import React from 'react';
-import styles from '../../../../styles/Global.module.css';
 
-function ProjectCard(props){
+export default function ProjectCard(props){
     return (
         <>
             <div>
@@ -11,5 +10,3 @@ function ProjectCard(props){
         </>
     )
 }
-
-export default ProjectCard;

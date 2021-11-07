@@ -1,5 +1,6 @@
 import React from 'react';
-function MainNav(props){
+
+export default function MainNav(props){
     return (
         <div className="bg-gray-900 py-10 px-10">
             <nav className={`md:container mx-auto flex justify-between w-full ${props.bg}`}>
@@ -17,6 +18,4 @@ function MainNav(props){
             </nav>
         </div>
     )
-}
-
-export default MainNav;
+};
