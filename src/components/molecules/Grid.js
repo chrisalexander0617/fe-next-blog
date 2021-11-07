@@ -3,7 +3,7 @@ import React from 'react';
 export default function Grid(props){
     return (
         <>
-           <div className={`py-5 mx-auto md:container flex items-center grid ${props.grid_options} ${props.bg}`}>
+           <div className={`flex items-center justify-center mx-auto py-5 md:container grid ${props.grid_options} ${props.bg}`}>
                {props.children}
            </div>
         </>

@@ -1,10 +1,9 @@
-import MainNav from '../src/components/organisms/MainNav';
-import GeneralHeader from '../src/components/organisms/headers/GeneralHeader'
+import MainNav from '../src/components/templates/MainNav';
+import GeneralHeader from '../src/components/templates/headers/GeneralHeader'
 import Head from 'next/head';
-import ServiceCardsGrid from '../src/components/organisms/ServiceCardGrid';
-
+import ServiceCardsGrid from '../src/components/templates/ServiceCardGrid';
 import SmallSpaceSection from '../src/components/molecules/sections/SmallSpaceSection';
-
+import Logos from '../src/components/templates/Logos';
 export default function Home() {
   return ( 
     <>
@@ -24,21 +23,9 @@ export default function Home() {
       <SmallSpaceSection bg="bg-gray-900">
         <ServiceCardsGrid  bg="bg-gray-900"  />
       </SmallSpaceSection>
+      <SmallSpaceSection bg="bg-gray-900">
+        <Logos />
+      </SmallSpaceSection>
     </>
   )
-}
-
-/*
-export async function getStaticProps(){
-
-  const res = await fetch('http://localhost:1337/posts');
-  const posts = await res.json();
-
-  return {
-    props:{
-      posts
-    }
-  }
-
-}
-*/
+};
