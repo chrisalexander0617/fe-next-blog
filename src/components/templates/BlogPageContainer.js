@@ -8,7 +8,7 @@ export default function BlogPageContainer(){
 
     useEffect(() =>{ 
         console.log(query)
-    },[query])
+    },[query]);
 
     return (
         <>
@@ -26,4 +26,4 @@ export default function BlogPageContainer(){
             </Grid>
         </>
     )
-}
+};

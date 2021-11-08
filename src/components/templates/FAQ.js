@@ -21,9 +21,18 @@ export default function FAQ(){
                     <FAQCard 
                         bg_color="bg-gray-800" 
                         card_title_text_color="text-green-300"
-                        card_title="Why technologies do you work with?"
+                        card_title="What technologies do you work with?"
                         card_text_color="text-gray-400"
                         card_text="We work with React, MongoDB and Node. We also work with various of other NPM libraries as well. Too many to count."
+                    />
+                    <FAQCard 
+                        bg_color="bg-gray-800" 
+                        card_title_text_color="text-green-300"
+                        card_title="Will you work with my industry?"
+                        card_text_color="text-gray-400"
+                        card_text="We work in various industries and businesses large and small. We specialize in eCommerce and health but we also work with other industries as well. 
+                        We do meet-and-greets with new potential clients to make sure we understand their problems(s) and to see if we are a great fit.
+                        "
                     />
                 </div>
             </div>
