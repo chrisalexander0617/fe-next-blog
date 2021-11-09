@@ -2,25 +2,15 @@ import Head from 'next/head';
 import BlogPageContainer from '../../src/components/templates/BlogPageContainer';
 import SmallSpaceSection from  '../../src/components/molecules/sections/SmallSpaceSection';
 
-export default function Home({posts}) {
+export default function Blog({posts}) {
     return ( 
       <>
         <Head>
-          <title>Blog PAge</title>
+          <title>Blog</title>
         </Head>
         <SmallSpaceSection bg="bg-gray-900">
-           <BlogPageContainer />
+           <BlogPageContainer blog_posts={posts} />
         </SmallSpaceSection>
-        {posts && posts.map((post, i) => (
-            /* Replace localhost with environemtal variables or domain */
-            <a href={`http://localhost:3000/blog/${post.Slug}`} >
-              <div key={post.i}>
-                  <h1>{post.Title}</h1>
-                  <p>{post.Content} </p>
-              </div>
-            </a>
-            )
-          )}
       </>
     )
   }
@@ -34,6 +24,5 @@ export default function Home({posts}) {
         posts
       }
     }
-  
   }
  

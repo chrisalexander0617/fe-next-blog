@@ -15,11 +15,6 @@ export default function Home() {
         <meta name="description" content="Digyt is changing the world with AI!" />
       </Head>
 
-      <MainNav 
-        bg="bg-gray-900" 
-        textColor="text-white"
-      />
-
       <GeneralHeader 
         title="Future-Proofing Businesses with AI and Headless Technologies " 
       />

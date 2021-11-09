@@ -5,7 +5,7 @@ import FAQCard from '../molecules/cards/FAQCard';
 export default function FAQ(){
     return (
         <>  
-            <div className="faq">
+            <div id="faq" className="faq">
                 <div className="text-center my-10">
                     <h2 className="text-white text-4xl font-bold mb-5">FAQ.</h2>
                     <p className="text-gray-400 mb-5">This is our faq section yp</p> 
