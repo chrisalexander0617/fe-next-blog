@@ -26,11 +26,11 @@ export default function Home() {
       <SmallSpaceSection bg="bg-gray-900">
         <Logos />
       </SmallSpaceSection>
-      
+      {/*
       <SmallSpaceSection bg="bg-gray-900">
         <Projects />
       </SmallSpaceSection>
-      
+      */}
       <SmallSpaceSection bg="bg-gray-900">
         <FAQ />
      </SmallSpaceSection>

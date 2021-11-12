@@ -16,7 +16,8 @@ export default function BlogPageContainer(props){
             <div className="content-panel mb-10">
                 <Grid grid_options="grid-cols-1 gap-10 px-0">
                     <div>
-                        <h1 className="font-bold text-4xl text-white mb-5">BLog</h1>
+                        <h1 className="font-bold text-4xl text-blue-100 mb-5">Blog</h1>
+                        {/*
                         <TextInput handleChange={ (e) => updateQuery(e.target.value) } label_title="Search" placeholder="AI for ecommer..." />
                         <Grid grid_options="grid-cols-4 gap-10 px-0 my-5">
                             <SmallButton button_text="Javascript" bg_color="bg-red-400" text_color="text-white" />
@@ -24,6 +25,7 @@ export default function BlogPageContainer(props){
                             <SmallButton button_text="Javascript" bg_color="bg-yellow-400" text_color="text-white" />
                             <SmallButton button_text="Javascript" bg_color="bg-green-400" text_color="text-white" />
                         </Grid>
+                        */}
                     </div>
                 </Grid>
             </div>
@@ -33,7 +35,7 @@ export default function BlogPageContainer(props){
                             <BlogPostCard 
                                 img={post.Img.name}
                                 key={index} 
-                                title_text_color="text-gray-200"
+                                title_text_color="text-blue-100"
                                 title={post.Title}  
                             /> 
                         </a>

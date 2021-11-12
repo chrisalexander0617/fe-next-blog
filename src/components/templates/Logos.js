@@ -14,7 +14,7 @@ export default function Logos(){
         <div className="text-center">
             <h2 className="text-gray-300 text-2xl mb-10">Technologies</h2>
         </div>
-            <Grid grid_options="grid-cols-3 gap-10 md:grid-cols-3 lg:grid-cols-6">
+            <Grid grid_options="grid-cols-3 flex justify-center items-center gap-10 md:grid-cols-3 lg:grid-cols-6">
                 <ReactLogo />
                 <MongoDBLogo />
                 <NodeJSLogo />

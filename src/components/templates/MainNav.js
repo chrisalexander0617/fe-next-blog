@@ -9,10 +9,10 @@ export default function MainNav(props){
                 </div>
                 <div>
                     <ul className="flex flex-wrap">
-                        <a href="/"><li className="text-white mx-5 font-bold">Home</li></a>
-                        <a href="/blog"><li className="text-white mx-5 font-bold">Blog</li></a>
-                        <a href="/#faq"><li className="text-white mx-5 font-bold">Faq</li></a>
-                        <li className="text-white mx-5 font-bold">Contact</li>
+                        <a href="/"><li className="text-white mx-5 font-bold uppercase nav-link">Home</li></a>
+                        <a href="/blog"><li className="text-white mx-5 font-bold uppercase nav-link">Blog</li></a>
+                        <a href="/#faq"><li className="text-white mx-5 font-bold uppercase nav-link">Faq</li></a>
+                        <li className="text-white mx-5 font-bold uppercase nav-link">Contact</li>
                     </ul>
                 </div>
             </nav>
