@@ -7,7 +7,9 @@ import Logos from '../src/components/templates/Logos';
 import Projects from '../src/components/templates/Projects';
 import FAQ from '../src/components/templates/FAQ';
 
-export default function Home() {
+import BlogPageContainer from '../src/components/templates/BlogPageContainer';
+
+export default function Home({posts}) {
   return ( 
     <>
       <Head>
@@ -26,14 +28,21 @@ export default function Home() {
       <SmallSpaceSection bg="bg-gray-900">
         <Logos />
       </SmallSpaceSection>
-      {/*
-      <SmallSpaceSection bg="bg-gray-900">
-        <Projects />
-      </SmallSpaceSection>
-      */}
+    
       <SmallSpaceSection bg="bg-gray-900">
         <FAQ />
      </SmallSpaceSection>
     </>
   )
 };
+
+export async function getStaticProps(){
+  const res = await fetch('http://localhost:1337/posts');
+  const posts = await res.json();
+
+  return {
+    props:{
+      posts
+    }
+  }
+}

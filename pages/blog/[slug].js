@@ -17,7 +17,7 @@ export default function Post({post}){
                     <Grid grid_options="grid-cols-1 mx-auto">
                         <div>
                             <h1 className="text-4xl text-blue-100 text-center mb-10">{post.Title}</h1>
-                           <img className="blog-post-image" src={post.Img.name} />
+                            <img className="blog-post-image" src={`http://localhost:1337${post.Img.url}`} />
                         </div>
                     </Grid>
                     <div className="markdown-content">

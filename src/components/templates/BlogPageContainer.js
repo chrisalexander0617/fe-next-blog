@@ -25,15 +25,16 @@ export default function BlogPageContainer(props){
                             <SmallButton button_text="Javascript" bg_color="bg-yellow-400" text_color="text-white" />
                             <SmallButton button_text="Javascript" bg_color="bg-green-400" text_color="text-white" />
                         </Grid>
-                        */}
+                        */}s
                     </div>
                 </Grid>
             </div>
             <Grid grid_options="grid-cols-2 gap-10 px-0">
                 {props.blog_posts && props.blog_posts.map((post, index) => (
+                    console.log(post.Img),
                         <a href={`/blog/${post.Slug}`} >
                             <BlogPostCard 
-                                img={post.Img.name}
+                                img={post.Img.url}
                                 key={index} 
                                 title_text_color="text-blue-100"
                                 title={post.Title}  
