@@ -25,7 +25,7 @@ export default function BlogPageContainer(props){
                             <SmallButton button_text="Javascript" bg_color="bg-yellow-400" text_color="text-white" />
                             <SmallButton button_text="Javascript" bg_color="bg-green-400" text_color="text-white" />
                         </Grid>
-                        */}s
+                        */}
                     </div>
                 </Grid>
             </div>
