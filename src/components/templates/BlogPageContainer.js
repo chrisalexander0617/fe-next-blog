@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import Grid from '../molecules/Grid';
-import TextInput from '../atoms/inputs/TextInput';
 import BlogPostCard from '../molecules/cards/BlogPostCard';
-import SmallButton from '../atoms/buttons/SmallButton'
 
 export default function BlogPageContainer(props){
     const [query, updateQuery] = useState("")
 
+    /*
     useEffect(() =>{ 
         console.log(query)
     },[query]);
+    */
 
     return (
         <>
@@ -31,7 +31,6 @@ export default function BlogPageContainer(props){
             </div>
             <Grid grid_options="grid-cols-2 gap-10 px-0">
                 {props.blog_posts && props.blog_posts.map((post, index) => (
-                    console.log(post.Img),
                         <a href={`/blog/${post.Slug}`} >
                             <BlogPostCard 
                                 img={post.Img.url}

@@ -6,7 +6,6 @@ import Grid from '../../src/components/molecules/Grid';
 import SmallSpaceSection from '../../src/components/molecules/sections/SmallSpaceSection'
 
 export default function Post({post}){
-    console.log(post)
     return (
         <>
             <Head>
