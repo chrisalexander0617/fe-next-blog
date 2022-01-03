@@ -13,23 +13,23 @@ export default function ServiceCardsGrid(props){
                     <ServiceCard 
                         bg_color="bg-gray-800"
                         card_title_text_color="text-green-300"
-                        card_title="AI"
+                        card_title="Software and Web Development"
                         card_text_color="text-gray-400"
-                        card_text="We build smart software that solves problems in multiple sectors" 
+                        card_text="We build scalable,  secure and usable software" 
                     />
                     <ServiceCard 
                         bg_color="bg-gray-800"
                         card_title_text_color="text-green-300"
-                        card_title="Headless Technology"
+                        card_title="API Design"
                         card_text_color="text-gray-400"
-                        card_text="We build scalable software infrastructures that allows growth and flexibility at a low cost" 
+                        card_text="We build custom backends that fits your business model"
                     />
                     <ServiceCard 
                         bg_color="bg-gray-800"
                         card_title_text_color="text-green-300"
                         card_title="Consulting"
                         card_text_color="text-gray-400"
-                        card_text="We build scalable software infrastructures that allows growth and flexibility at a low cost" 
+                        card_text="We help you build the proper software team to get your digital product on the market with minimal hiccups" 
                     />
                 </Grid>
             </div>

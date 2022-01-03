@@ -6,7 +6,6 @@ import SmallSpaceSection from '../src/components/molecules/sections/SmallSpaceSe
 import Logos from '../src/components/templates/Logos';
 import Projects from '../src/components/templates/Projects';
 import FAQ from '../src/components/templates/FAQ';
-
 import BlogPageContainer from '../src/components/templates/BlogPageContainer';
 
 export default function Home({posts}) {
