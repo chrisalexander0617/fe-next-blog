@@ -11,11 +11,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-markdown": "^7.1.0",
-<<<<<<< HEAD
     "webpack": "^5.62.1"
-=======
-    "react-spring": "^9.3.0"
->>>>>>> b9be6970e8757da9f843e3cf9a45d2db9d656113
   },
   "devDependencies": {
     "autoprefixer": "^10.3.7",

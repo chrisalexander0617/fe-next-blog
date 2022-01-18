@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import BlogPageContainer from '../../src/components/templates/BlogPageContainer';
+import BlogPageContainer from '../../src/components/organisms/BlogPageContainer';
 import SmallSpaceSection from  '../../src/components/molecules/sections/SmallSpaceSection';
 
 export default function Blog({posts}) {

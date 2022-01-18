@@ -1,12 +1,19 @@
-import MainNav from './templates/MainNav'
-import Footer from './templates/Footer'
+import MainNav from './organisms/MainNav'
+import Footer from './organisms/Footer'
 
 export default function Layout({ children }) {
   return (
     <>
-      <MainNav bg="bg-gray-900"  textColor="text-white" />
-      <main>{children}</main>
-      <Footer bg="bg-gray-800" />
+      <MainNav 
+        bg="bg-gray-900"  
+        textColor="text-white" 
+      />
+      <main>
+        {children}
+      </main>
+      <Footer 
+        bg="bg-gray-800" 
+      />
     </>
   )
 }

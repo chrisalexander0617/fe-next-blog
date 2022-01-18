@@ -3,6 +3,8 @@
     height:auto;
     width:100%;
     overflow:hidden;
+    padding-top:4rem;
+    padding-bottom:8rem;
 }
 
 .title {
