@@ -10,18 +10,14 @@ export default function Home() {
         <title>Digyt | Detroit Software Company</title>
         <meta name="description" content="Digyt is changing the world with AI!" />
       </Head>
-
       <MainNav 
         bg="bg-gray-900" 
         textColor="text-white"
       /> 
-
       <GeneralHeader 
-        title="Future-Proofing Businesses with AI and Headless Technologies" 
+        title="We engineer desirable digital products that connect brands with the people they serve."
       />
-
       <ServiceCardsGrid />
-
     </>
   )
 }

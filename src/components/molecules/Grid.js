@@ -1,9 +1,9 @@
 import React from 'react';
 
-export function Grid(props){
+export default function Grid(props){
     return (
         <>
-           <div className={`py-5 mx-auto md:container flex items-center grid ${props.bg} ${props.bg}`}>
+           <div className={`py-5 mx-auto md:container flex items-center grid ${props.grid_options} ${props.bg} ${props.classes}` }>
                {props.children}
            </div>
         </>
