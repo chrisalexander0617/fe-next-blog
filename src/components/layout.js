@@ -8,11 +8,11 @@ export default function Layout({ children }) {
         bg="bg-gray-900"  
         textColor="text-white" 
       />
-      <main>
+      <main className="bg-gray-900">
         {children}
       </main>
       <Footer 
-        bg="bg-gray-800" 
+        bg="bg-gray-900" 
       />
     </>
   )
