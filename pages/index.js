@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { Section } from '../src/components/molecules/sections/Section'
 import { Services } from '../src/components/organisms/Services'
 import { HTMLHead } from '../src/components/dom-fragments/HTMLHead'
+import { Projects } from '../src/components/organisms/Projects'
 
 export default function Home({posts}) {
   return ( 
@@ -21,6 +22,7 @@ export default function Home({posts}) {
       <Section bg="bg-gray-900">
         <Services />
       </Section>
+        <Projects bg="bg-yellow-300"  />
     </>
   )
 };
