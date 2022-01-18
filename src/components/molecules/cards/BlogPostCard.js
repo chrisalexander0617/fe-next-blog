@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function BlogPostCard(props){
+export const  BlogPostCard = props => {
     return (
         <>
             <div>

@@ -1,9 +1,18 @@
 import React from 'react';
 
-export default function Button(props){
+export const Button = props => {
     return (
         <>
-            <button className={`px-5 py-3 ${props.bg_color} rounded-full ${props.text_color} font-bold`}>{props.button_text}</button>
+            <button 
+                className={`
+                px-5 py-3 
+                ${props.bg_color} 
+                rounded-full 
+                ${props.text_color} 
+                font-bold`}
+            >
+            {props.button_text}
+            </button>
         </>
     ) 
 }

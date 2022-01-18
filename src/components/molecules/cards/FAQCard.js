@@ -5,7 +5,7 @@ const FAQCardStyles = {
     width:'600px'
 };
 
-export default function FAQCard(props){
+export const FAQCard = props => {
     return (
         <>
             <div style={FAQCardStyles} className={`faq-card ${props.bg_color} px-10 my-5 py-5 shadow-xl rounded-xl`}>

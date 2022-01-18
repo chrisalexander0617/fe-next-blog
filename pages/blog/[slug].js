@@ -1,9 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-
-import Grid from '../../src/components/molecules/Grid';
-import SmallSpaceSection from '../../src/components/molecules/sections/SmallSpaceSection'
+import { Grid } from '../../src/components/molecules/Grid';
 
 export default function Post({post}){
     return (
@@ -11,7 +9,6 @@ export default function Post({post}){
             <Head>
                 <title>{post.Title}</title>
             </Head>
-            <SmallSpaceSection bg="bg-gray-900">
                 <div className="content">
                     <Grid grid_options="grid-cols-1 mx-auto">
                         <div>
@@ -23,7 +20,6 @@ export default function Post({post}){
                         <ReactMarkdown  children={post.Content} />
                     </div>
                 </div>
-            </SmallSpaceSection>
         </>
     )
 }

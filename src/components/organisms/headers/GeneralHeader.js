@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../../atoms/buttons/Button'
+import { Button } from '../../atoms/buttons/Button'
 import styles from '../../../../styles/Global.module.css';
 
 export const GeneralHeader = props => {

@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import BlogPageContainer from '../../src/components/organisms/BlogPageContainer';
-import SmallSpaceSection from  '../../src/components/molecules/sections/SmallSpaceSection';
 
 export default function Blog({posts}) {
     return ( 
@@ -8,9 +7,7 @@ export default function Blog({posts}) {
         <Head>
           <title>Blog</title>
         </Head>
-        <SmallSpaceSection bg="bg-gray-900">
-           <BlogPageContainer blog_posts={posts} />
-        </SmallSpaceSection>
+        <BlogPageContainer blog_posts={posts} />
       </>
     )
   }

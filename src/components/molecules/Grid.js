@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const  Grid = props => {
+export const Grid = props => {
     return (
         <>
            <div className={`

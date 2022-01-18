@@ -2,8 +2,8 @@ import React, {
     useEffect, 
     useState
 } from 'react';
-import Grid from '../molecules/Grid';
-import BlogPostCard from '../molecules/cards/BlogPostCard';
+import { Grid } from '../molecules/Grid';
+import { BlogPostCard } from '../molecules/cards/BlogPostCard';
 
 export default function BlogPageContainer(props){
     return (
