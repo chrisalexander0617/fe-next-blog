@@ -1,6 +1,4 @@
-import MainNav from '../src/components/organisms/MainNav';
-import GeneralHeader from '../src/components/organisms/headers/GeneralHeader'
-import Head from 'next/head';
+import { GeneralHeader } from '../src/components/organisms/headers/GeneralHeader'
 import { Section } from '../src/components/molecules/sections/Section'
 import { Services } from '../src/components/organisms/Services'
 import { HTMLHead } from '../src/components/dom-fragments/HTMLHead'
@@ -15,14 +13,14 @@ export default function Home({posts}) {
         metaContent="Digyt is changing the world with AI!" 
       />
       <GeneralHeader 
-        title="Digyt is a Botique 
+        title="Digyt is a Boutique 
         Software Development Firm 
         Located in the Motor City"
       />
       <Section bg="bg-gray-900">
         <Services />
       </Section>
-        <Projects bg="bg-yellow-300"  />
+      <Projects bg="bg-yellow-300"  />
     </>
   )
 };

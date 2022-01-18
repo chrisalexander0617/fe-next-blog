@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Grid from '../molecules/Grid';
+import { Grid } from '../molecules/Grid';
 import ReactLogo from '../molecules/logos/React.js';
 import MongoDBLogo from '../molecules/logos/MongoDB.js';
 import BrainJSLogo from '../molecules/logos/BrainJS';

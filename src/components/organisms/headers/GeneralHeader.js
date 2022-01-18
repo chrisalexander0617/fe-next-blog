@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../../atoms/buttons/Button'
 import styles from '../../../../styles/Global.module.css';
 
-export default function GeneralHeader(props){
+export const GeneralHeader = props => {
     return (
         <>
             <header className={`header flex items-center justify-center px-10  bg-gray-900 text-blue-100 font-extrabold`}>

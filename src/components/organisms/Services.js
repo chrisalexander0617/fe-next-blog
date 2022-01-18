@@ -5,7 +5,7 @@ import { Card } from '../molecules/cards/Card';
 export const Services = () => {
     return (
         <>
-            <Grid grid_options="px-10 service-card-grid grid-cols-1 gap-10 lg:grid-cols-3 md:grid-cols-2">
+            <Grid grid_options="service-card-grid grid-cols-1 gap-10 lg:grid-cols-3 md:grid-cols-2">
                 <Card 
                     bg_color="bg-gray-800"
                     card_title_text_color="text-gray-200"

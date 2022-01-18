@@ -1,5 +1,5 @@
-import MainNav from './organisms/MainNav'
-import Footer from './organisms/Footer'
+import { MainNav } from './organisms/MainNav'
+import { Footer } from './organisms/Footer'
 
 export default function Layout({ children }) {
   return (
