@@ -1,27 +1,19 @@
 import Head from 'next/head';
+import BlogPageContainer from '../../src/components/templates/BlogPageContainer';
+import SmallSpaceSection from  '../../src/components/molecules/sections/SmallSpaceSection';
 
-export default function Home({posts}) {
+export default function Blog({posts}) {
     return ( 
       <>
         <Head>
-          <title>Blog PAge</title>
+          <title>Blog</title>
         </Head>
-        {
-          posts && posts.map((post) => (
-            /* Replace localhost with environemtal variables or domain */
-            <a href={`http://localhost:3000/blog/${post.Slug}`} >
-              <div key={post.id}>
-                  <h1>{post.Title}</h1>
-                  <p>{post.Content} </p>
-              </div>
-            </a>
-            )
-          )
-        }
+        <SmallSpaceSection bg="bg-gray-900">
+           <BlogPageContainer blog_posts={posts} />
+        </SmallSpaceSection>
       </>
     )
   }
-
 
   export async function getStaticProps(){
     const res = await fetch('http://localhost:1337/posts');
@@ -32,6 +24,5 @@ export default function Home({posts}) {
         posts
       }
     }
-  
   }
  

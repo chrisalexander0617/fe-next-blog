@@ -2,14 +2,28 @@ import Head from 'next/head';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 
+import Grid from '../../src/components/molecules/Grid';
+import SmallSpaceSection from '../../src/components/molecules/sections/SmallSpaceSection'
+
 export default function Post({post}){
     return (
         <>
             <Head>
                 <title>{post.Title}</title>
             </Head>
-            <h1>{post.Title}</h1>
-            <ReactMarkdown children={post.Content} />
+            <SmallSpaceSection bg="bg-gray-900">
+                <div className="content">
+                    <Grid grid_options="grid-cols-1 mx-auto">
+                        <div>
+                            <h1 className="text-4xl text-blue-100 text-center mb-10">{post.Title}</h1>
+                            <img className="blog-post-image" src={`http://localhost:1337${post.Img.url}`} />
+                        </div>
+                    </Grid>
+                    <div className="markdown-content">
+                        <ReactMarkdown  children={post.Content} />
+                    </div>
+                </div>
+            </SmallSpaceSection>
         </>
     )
 }
